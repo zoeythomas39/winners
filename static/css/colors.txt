@@ -1,0 +1,6 @@
+dark brown: #212121
+dark pink: #a35c75
+light pink: #ffd2e4
+cream: #FDFAF1
+darker pink: #6F3E4F
+brown: #906B51

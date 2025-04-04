@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- the full dict for a president is sent here as pres by the route -->
+
+<article>
+
+<h1 id="actress_head">{{ actress['winner'] }}</h1>
+
+<!-- NOTE the pattern for pointing to a file inside the static folder -->
+
+<div class="actress_maincontent">
+
+<div id="actress_image_container">
+    <img id="actress_image" src="{{ url_for('static', filename='images/' + actress['image']) }}" alt="Actress portrait">
+</div>
+
+<div id="actress_text">
+    <p>
+        {{ actress['winner'] }}, an actress originally from {{ actress['home'] }}, won the <b>{{ actress['year'] }}</b> Oscar for her role in <b>"{{ actress['film'] }}."</b> 
+    </p>
+
+    <p>
+        Her acceptance speech was <b>{{ actress['words'] }}</b> words long.
+    </p>
+
+    <p>
+        <a href="{{ actress['link'] }}">View Wikipedia entry for {{ actress['winner'] }}.</a>
+    </p>
+
+    <p id="return">
+        <a href="{{ url_for('index') }}">Return to the list</a> to select a different actress.
+    </p>
+
+</div>
+
+</div>
+
+</article>
+
+<!-- NOTE the way to link to a route: Use the function name -->
+
+{% endblock %}

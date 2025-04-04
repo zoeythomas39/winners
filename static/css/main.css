@@ -1,0 +1,153 @@
+body{
+    background-color: #212121;
+    color: #212121;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1{
+    color: #A35C75;
+    font-size: 4rem;
+    font-family:"Chicle", serif;
+    margin: 1rem;
+    text-align: center;
+}
+
+a{
+    color: #FDFAF1;
+}
+
+a:hover{
+    color: #A35C75;
+    background-color: #FDFAF1;
+}
+
+a:visited{
+    color: #c0bcb2;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    background-color: #A35C75;
+    margin: 0.5rem;
+    padding: 1rem;
+    margin-left: -2rem;
+    text-align: center;
+    color: #FDFAF1;
+    font-size: 2rem;
+}
+
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #FDFAF1;
+    justify-self: center;
+    max-width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.click_any{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.actress_maincontent{
+    display: flex;
+    color: #FDFAF1;
+    gap: 1rem;
+    align-items: top;
+    margin: 1rem;
+    max-width: 50%;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    font-size: 1.25rem;
+    background-color: #3f1524;
+    padding: 1rem;
+}
+
+#actress_image_container{
+    width: 50%;
+}
+
+#actress_text{
+    width: 50%;
+    background-color: #A35C75;
+    color: #212121;
+    padding: 1rem;
+}
+
+#return{
+    background-color: #fff;
+    padding: 1rem;
+}
+
+#return a{
+    color: #A35C75;
+}
+
+#return a:hover{
+    background-color: #dad7ce;
+}
+
+img{
+    max-width: 100%;    
+}
+
+#actress_head{
+    font-size: 7rem;
+}
+
+
+@media (max-width: 1050px){
+    #actress_head{
+        font-size: 5rem;
+    }
+    .actress_maincontent{
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 700px){
+    #actress_head{
+        font-size: 4rem;
+    }
+    .actress_maincontent{
+        max-width: 75%;
+        font-size: 1rem;
+    }
+    .maincontent{
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 500px){
+    .actress_maincontent{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .maincontent{
+        max-width: 100%;
+    }
+
+    #actress_text{
+        width: 90%;
+    }
+
+    #actress_image_container{
+        width: 100%;
+    }
+}
